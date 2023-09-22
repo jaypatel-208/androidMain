@@ -1,8 +1,9 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
-    id("maven-publish")
 }
+
+apply(from = "$rootDir/publish.gradle")
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)
 kotlin {
